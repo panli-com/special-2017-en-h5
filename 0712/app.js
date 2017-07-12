@@ -55,9 +55,10 @@ function FloorShopAll(data, imgHead, id) {
     var name = data[i]['店铺'];
     var img = `./build/css/img/shop/${id}-${i+1}.png`;
 
-    str += `<li class="">
+    str += `<li class="li_${i+1}">
           <a href="${url}" class="" target="_black" title="${name}">
             <img src="${img}" alt="${name}">
+            <span class="icon">&nbsp;</span>
           </a>
         </li>`
 

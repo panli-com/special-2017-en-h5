@@ -9,7 +9,7 @@
     "author": "Julian",
     "load": {
       "css": ["./0712/src/scss/main.scss"],
-      "js": ["./libs/js/jquery.min.js", "./libs/js/iscroll.js", "./libs/js/navbarscroll.js", "./libs/js/view-rem720.js", "./0712/src/js/main.js"]
+      "js": ["./libs/js/jquery.min.js", "./libs/js/fastclick.js", "./libs/js/iscroll.js", "./libs/js/navbarscroll.js", "./libs/js/view-rem720.js", "./0712/src/js/main.js"]
     },
     "build": {
       "css": "519.css",

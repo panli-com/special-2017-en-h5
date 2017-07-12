@@ -13,6 +13,8 @@ function navClickIndex(index) {
 
   window.onload = function() {
 
+    FastClick.attach(document.body);
+
     $('#nav-tap').navbarscroll({
       defaultSelect: 0,
       scrollerWidth: 3,

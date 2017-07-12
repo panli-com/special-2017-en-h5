@@ -29,17 +29,17 @@ a {
     li {
       height: 44px;
       /*no*/
-      color: #333;
       float: left;
       line-height: 44px;
       /*no*/
       font-size: 16px;
       /*no*/
       text-align: center;
+      background-color: #e43566;
       &.cur {
         padding-left: 10px;
         /*no*/
-        background: #ca2654;
+        background-color: #ca2654;
         background: url(./img/on.png) no-repeat 6px center;
         /*no*/
         background-size: 10px 13px;

@@ -56,6 +56,11 @@ a {
   }
 }
 
+.app {
+  background: url(./img/loader.svg) no-repeat center 20px;
+  background-size: 120px 120px;
+}
+
 .floor {
   padding: 30px 0;
   ul {

@@ -57,7 +57,9 @@ a {
 }
 
 .app {
-  background: url(./img/loader.svg) no-repeat center 20px;
+  background-image: url(./img/loader.svg);
+  background-repeat: no-repeat;
+  background-position: center 20px;
   background-size: 120px 120px;
 }
 

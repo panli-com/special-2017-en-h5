@@ -14,7 +14,7 @@ import header from 'gulp-header';
 import replace from 'gulp-replace';
 import imagemin from 'gulp-imagemin';
 import px2rem from 'gulp-pxrem';
-import plumber from 'gulp-plumber';
+
 
 
 
@@ -35,6 +35,7 @@ const HostPath = `http://img.panlidns.com/CMS/special/${ID}/`;
 let cssLoadSrc = conf[day].load.css;
 let jsLoadSrc = conf[day].load.js;
 
+console.log(jsLoadSrc)
 
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
@@ -71,7 +72,6 @@ gulp.task('ejs', () => gulp.src(`./${day}/src/templates/index.ejs`)
 
 gulp.task('host', () => gulp.src(`./${day}/src/templates/html/html.html`)
   .pipe(replace('./build/', HostPath))
-  .pipe(gulp.dest(`./${day}/.tmp`))
   .pipe(rename('host.html'))
   .pipe(gulp.dest(`./${day}/`))
   .pipe(notify({ message: 'host html task complete' })))
@@ -150,8 +150,9 @@ gulp.task('dev', ['sass'], () => {
   gulp.watch(`./${day}/src/scss/*.scss`, ['sass']);
   gulp.watch('./home/scss/*.scss', ['home']);
   // 看守所有.js档
+
   gulp.watch(`./${day}/*.js`, ['scripts']);
-  gulp.watch(`./${day}/src/js/*.js`, ['html', 'scripts']);
+  gulp.watch(`./${day}/src/js/*.js`, ['scripts']);
 
   // 看守所有.html
   gulp.watch(`./${day}/*.html`).on('change', reload);

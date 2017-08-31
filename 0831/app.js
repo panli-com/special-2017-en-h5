@@ -52,6 +52,9 @@ function FloorShopAll(data, imgHead, id) {
   var str = '';
   for (var i = 0; i < data.length; i++) {
     var url = data[i]['链接'].replace('.', '.m.');
+    if(data[i]['h5url']){
+      url = data[i]['h5url']
+    }
     var name = data[i]['店铺名字'];
     var img = `./build/css/img/shop/${id}-${i+1}.png`;
 

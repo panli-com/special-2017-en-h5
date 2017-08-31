@@ -2,6 +2,7 @@ var shop = [{
     "类别": "月饼模具",
     "店铺名字": "劣狐狐烘焙",
     "链接": "https://tsmb.jiyoujia.com/",
+    "h5url": "https://shop70847045.m.taobao.com/",
     "H5店铺文案": "劣狐狐 烘焙潮流引领者"
   },
   {

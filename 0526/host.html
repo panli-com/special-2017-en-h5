@@ -16,6 +16,11 @@
   <meta name="keywords" content="Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购">
   <meta name="description" content="">
   <link rel="stylesheet" href="http://img.panlidns.com/CMS/special/517/css/517.css?20160808">
+  <style>
+    .hide {
+      display: none !important;
+    }
+  </style>
   <script src="http://img.panlidns.com/CMS/special/517/css/js/app.js"></script>
 </head>
 
@@ -28,11 +33,26 @@
     <section class="body_2">&nbsp;
     </section>
     <footer class="footer">
-      <a href="http://passport.panli.com/h5/NewRegister/Register.aspx" class="">
-        <img src="http://img.panlidns.com/CMS/special/517/css/img/btn.png" alt="">
+      <a id="time" href="http://passport.panli.com/h5/NewRegister/Register.aspx" class="">
+        <img id="btn1" class="hide" src="http://img.panlidns.com/CMS/special/517/css/img/btn.png" alt="">
+        <img id="btn2" class="hide" src="http://sf.panli.com/Ued/Special/2017/0831/img/btn.png" alt="">
       </a>
     </footer>
   </div>
+  <script>
+    function showBtb() {
+      var endTime = +new Date("2017/09/07 10:0:0")
+      var nowTime = +new Date()
+
+      if (nowTime > endTime) {
+
+        document.getElementById("btn1").setAttribute("class", "")
+      } else {
+        document.getElementById("btn2").setAttribute("class", "")
+      }
+    }
+    showBtb()
+  </script>
 </body>
 
 </html>

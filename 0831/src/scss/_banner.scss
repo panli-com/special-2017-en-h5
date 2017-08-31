@@ -26,7 +26,7 @@ a {
   }
   .scroller {
     // position: absolute;
-    ul{
+    ul {
       display: flex;
     }
     li {
@@ -46,8 +46,10 @@ a {
           color: #fff;
         }
         .icon {
-          width: 10px; /*no*/
-          height: 13px; /*no*/
+          width: 10px;
+          /*no*/
+          height: 13px;
+          /*no*/
           display: inline-block;
           background: url(./img/on.png) no-repeat center center;
           background-size: 100% 100%;
@@ -138,5 +140,19 @@ a {
     bottom: 10px;
     left: 50%;
     margin-left: -150px;
+  }
+}
+
+.qiu-desic {
+  font-size: 14px; /*no*/
+  width: 602px;
+  margin: 0 auto;
+  color: #FFF;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  span{
+    color: #ffee60;
   }
 }

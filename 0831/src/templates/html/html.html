@@ -302,6 +302,17 @@
       </div>
     </div>
   </div>
+  <script>
+    FastClick.attach(document.body);
+
+    PD('#nav-tap').on('click', 'li', function() {
+      var t = PD(this);
+      var index = t.index()
+      PD("#nav-tap li").removeClass('cur')
+      t.addClass('cur')
+      navClickIndex(index + 1)
+    })
+  </script>
 </body>
 
 </html>
